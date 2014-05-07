@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		427BAF32190F341500E0BBF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 427BAF30190F341500E0BBF1 /* InfoPlist.strings */; };
+		427BAF35190F341500E0BBF1 /* RenameDisk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 427BAF34190F341500E0BBF1 /* RenameDisk.cpp */; };
+		427BAF3E1916B3E600E0BBF1 /* Dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 427BAF3C1916B3E600E0BBF1 /* Dictionary.cpp */; };
+		427BAF3F1916B3E600E0BBF1 /* Dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 427BAF3D1916B3E600E0BBF1 /* Dictionary.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		427BAF28190F341500E0BBF1 /* RenameDisk.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RenameDisk.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		427BAF2C190F341500E0BBF1 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		427BAF2F190F341500E0BBF1 /* RenameDisk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RenameDisk-Info.plist"; sourceTree = "<group>"; };
+		427BAF31190F341500E0BBF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		427BAF33190F341500E0BBF1 /* RenameDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenameDisk.h; sourceTree = "<group>"; };
+		427BAF34190F341500E0BBF1 /* RenameDisk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RenameDisk.cpp; sourceTree = "<group>"; };
+		427BAF36190F341500E0BBF1 /* RenameDisk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RenameDisk-Prefix.pch"; sourceTree = "<group>"; };
+		427BAF3C1916B3E600E0BBF1 /* Dictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dictionary.cpp; sourceTree = "<group>"; };
+		427BAF3D1916B3E600E0BBF1 /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dictionary.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		427BAF23190F341500E0BBF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		427BAF1D190F341500E0BBF1 = {
+			isa = PBXGroup;
+			children = (
+				427BAF2D190F341500E0BBF1 /* RenameDisk */,
+				427BAF2A190F341500E0BBF1 /* Frameworks */,
+				427BAF29190F341500E0BBF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		427BAF29190F341500E0BBF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				427BAF28190F341500E0BBF1 /* RenameDisk.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		427BAF2A190F341500E0BBF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				427BAF2B190F341500E0BBF1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		427BAF2B190F341500E0BBF1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				427BAF2C190F341500E0BBF1 /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		427BAF2D190F341500E0BBF1 /* RenameDisk */ = {
+			isa = PBXGroup;
+			children = (
+				427BAF33190F341500E0BBF1 /* RenameDisk.h */,
+				427BAF34190F341500E0BBF1 /* RenameDisk.cpp */,
+				427BAF3D1916B3E600E0BBF1 /* Dictionary.h */,
+				427BAF3C1916B3E600E0BBF1 /* Dictionary.cpp */,
+				427BAF2E190F341500E0BBF1 /* Supporting Files */,
+			);
+			path = RenameDisk;
+			sourceTree = "<group>";
+		};
+		427BAF2E190F341500E0BBF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				427BAF2F190F341500E0BBF1 /* RenameDisk-Info.plist */,
+				427BAF30190F341500E0BBF1 /* InfoPlist.strings */,
+				427BAF36190F341500E0BBF1 /* RenameDisk-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		427BAF24190F341500E0BBF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427BAF3F1916B3E600E0BBF1 /* Dictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		427BAF27190F341500E0BBF1 /* RenameDisk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427BAF39190F341500E0BBF1 /* Build configuration list for PBXNativeTarget "RenameDisk" */;
+			buildPhases = (
+				427BAF22190F341500E0BBF1 /* Sources */,
+				427BAF23190F341500E0BBF1 /* Frameworks */,
+				427BAF24190F341500E0BBF1 /* Headers */,
+				427BAF25190F341500E0BBF1 /* Resources */,
+				427BAF26190F341500E0BBF1 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenameDisk;
+			productName = RenameDisk;
+			productReference = 427BAF28190F341500E0BBF1 /* RenameDisk.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		427BAF1E190F341500E0BBF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = baskingshark;
+			};
+			buildConfigurationList = 427BAF21190F341500E0BBF1 /* Build configuration list for PBXProject "RenameDisk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 427BAF1D190F341500E0BBF1;
+			productRefGroup = 427BAF29190F341500E0BBF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				427BAF27190F341500E0BBF1 /* RenameDisk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		427BAF25190F341500E0BBF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427BAF32190F341500E0BBF1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		427BAF26190F341500E0BBF1 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		427BAF22190F341500E0BBF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427BAF35190F341500E0BBF1 /* RenameDisk.cpp in Sources */,
+				427BAF3E1916B3E600E0BBF1 /* Dictionary.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		427BAF30190F341500E0BBF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				427BAF31190F341500E0BBF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		427BAF37190F341500E0BBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		427BAF38190F341500E0BBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		427BAF3A190F341500E0BBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RenameDisk/RenameDisk-Prefix.pch";
+				INFOPLIST_FILE = "RenameDisk/RenameDisk-Info.plist";
+				MODULE_NAME = baskingshark.RenameDisk;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		427BAF3B190F341500E0BBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RenameDisk/RenameDisk-Prefix.pch";
+				INFOPLIST_FILE = "RenameDisk/RenameDisk-Info.plist";
+				MODULE_NAME = baskingshark.RenameDisk;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		427BAF21190F341500E0BBF1 /* Build configuration list for PBXProject "RenameDisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427BAF37190F341500E0BBF1 /* Debug */,
+				427BAF38190F341500E0BBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427BAF39190F341500E0BBF1 /* Build configuration list for PBXNativeTarget "RenameDisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427BAF3A190F341500E0BBF1 /* Debug */,
+				427BAF3B190F341500E0BBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 427BAF1E190F341500E0BBF1 /* Project object */;
+}
