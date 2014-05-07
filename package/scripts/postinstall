@@ -1,0 +1,17 @@
+#!/bin/sh
+
+#  postinstall.sh
+
+#$1: Full Path to Package
+#$2: Full Path to target installation directory: /Applications
+#$3: Mountpoint of installation disk: / or /Volumes/External_Drive
+#$4: Root directory of currently booted system
+
+KEXTD_PID=`/bin/ps -ax | /usr/bin/awk '$4 ~ /kextd$/ {print $1}'`
+
+if [ -n "$KEXTD_PID" ]; then
+    # kextd running
+    /usr/bin/touch "$3/System/Library/Extensions"
+else
+    /usr/sbin/kextcache -u "$3"
+fi

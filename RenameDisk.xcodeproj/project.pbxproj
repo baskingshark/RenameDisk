@@ -13,6 +13,16 @@
 		427BAF3F1916B3E600E0BBF1 /* Dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 427BAF3D1916B3E600E0BBF1 /* Dictionary.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		427BAF5A191AC51600E0BBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427BAF1E190F341500E0BBF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427BAF27190F341500E0BBF1;
+			remoteInfo = RenameDisk;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		427BAF28190F341500E0BBF1 /* RenameDisk.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RenameDisk.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		427BAF2C190F341500E0BBF1 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
@@ -23,6 +33,8 @@
 		427BAF36190F341500E0BBF1 /* RenameDisk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RenameDisk-Prefix.pch"; sourceTree = "<group>"; };
 		427BAF3C1916B3E600E0BBF1 /* Dictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dictionary.cpp; sourceTree = "<group>"; };
 		427BAF3D1916B3E600E0BBF1 /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dictionary.h; sourceTree = "<group>"; };
+		427BAF41191ABE2E00E0BBF1 /* buildpkg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = buildpkg.sh; sourceTree = "<group>"; };
+		427BAF43191ABE2E00E0BBF1 /* postinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				427BAF2D190F341500E0BBF1 /* RenameDisk */,
+				427BAF40191ABE2E00E0BBF1 /* package */,
 				427BAF2A190F341500E0BBF1 /* Frameworks */,
 				427BAF29190F341500E0BBF1 /* Products */,
 			);
@@ -91,6 +104,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		427BAF40191ABE2E00E0BBF1 /* package */ = {
+			isa = PBXGroup;
+			children = (
+				427BAF41191ABE2E00E0BBF1 /* buildpkg.sh */,
+				427BAF42191ABE2E00E0BBF1 /* scripts */,
+			);
+			path = package;
+			sourceTree = "<group>";
+		};
+		427BAF42191ABE2E00E0BBF1 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				427BAF43191ABE2E00E0BBF1 /* postinstall */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -103,6 +133,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		427BAF56191AC50F00E0BBF1 /* RenameDisk.pkg */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 427BAF57191AC50F00E0BBF1 /* Build configuration list for PBXLegacyTarget "RenameDisk.pkg" */;
+			buildPhases = (
+			);
+			buildToolPath = package/buildpkg.sh;
+			buildWorkingDirectory = "";
+			dependencies = (
+				427BAF5B191AC51600E0BBF1 /* PBXTargetDependency */,
+			);
+			name = RenameDisk.pkg;
+			passBuildSettingsInEnvironment = 1;
+			productName = RenameDisk.pkg;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		427BAF27190F341500E0BBF1 /* RenameDisk */ = {
@@ -146,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				427BAF27190F341500E0BBF1 /* RenameDisk */,
+				427BAF56191AC50F00E0BBF1 /* RenameDisk.pkg */,
 			);
 		};
 /* End PBXProject section */
@@ -182,6 +231,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		427BAF5B191AC51600E0BBF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427BAF27190F341500E0BBF1 /* RenameDisk */;
+			targetProxy = 427BAF5A191AC51600E0BBF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		427BAF30190F341500E0BBF1 /* InfoPlist.strings */ = {
@@ -293,6 +350,31 @@
 			};
 			name = Release;
 		};
+		427BAF58191AC50F00E0BBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		427BAF59191AC50F00E0BBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -310,6 +392,14 @@
 			buildConfigurations = (
 				427BAF3A190F341500E0BBF1 /* Debug */,
 				427BAF3B190F341500E0BBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		427BAF57191AC50F00E0BBF1 /* Build configuration list for PBXLegacyTarget "RenameDisk.pkg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427BAF58191AC50F00E0BBF1 /* Debug */,
+				427BAF59191AC50F00E0BBF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
