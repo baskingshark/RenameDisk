@@ -35,6 +35,8 @@
 		427BAF3D1916B3E600E0BBF1 /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dictionary.h; sourceTree = "<group>"; };
 		427BAF41191ABE2E00E0BBF1 /* buildpkg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = buildpkg.sh; sourceTree = "<group>"; };
 		427BAF43191ABE2E00E0BBF1 /* postinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
+		42F0E526191FB85100FF83F0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		42F0E528191FBF9B00FF83F0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,8 @@
 		427BAF1D190F341500E0BBF1 = {
 			isa = PBXGroup;
 			children = (
+				42F0E528191FBF9B00FF83F0 /* LICENSE */,
+				42F0E526191FB85100FF83F0 /* README.md */,
 				427BAF2D190F341500E0BBF1 /* RenameDisk */,
 				427BAF40191ABE2E00E0BBF1 /* package */,
 				427BAF2A190F341500E0BBF1 /* Frameworks */,
@@ -394,6 +398,7 @@
 				427BAF3B190F341500E0BBF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		427BAF57191AC50F00E0BBF1 /* Build configuration list for PBXLegacyTarget "RenameDisk.pkg" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +407,7 @@
 				427BAF59191AC50F00E0BBF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
