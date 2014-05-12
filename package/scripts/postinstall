@@ -12,6 +12,7 @@ KEXTD_PID=`/bin/ps -ax | /usr/bin/awk '$4 ~ /kextd$/ {print $1}'`
 if [ -n "$KEXTD_PID" ]; then
     # kextd running
     /usr/bin/touch "$3/System/Library/Extensions"
+    /usr/sbin/kextcache -u "$3"
 else
     /usr/sbin/kextcache -u "$3"
 fi
